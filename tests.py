@@ -93,7 +93,6 @@ class CupcakeViewsTestCase(TestCase):
 
             data = resp.json
 
-            # don't know what ID we'll get, make sure it's an int & normalize
             self.assertIsInstance(data['cupcake']['id'], int)
             del data['cupcake']['id']
 
